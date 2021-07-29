@@ -480,19 +480,17 @@ html{
     color: #fff;
 }
 .contactWrapper{
-    width: 100rem;
-    height: 60rem;
+    width: 60%;
+    height: 75rem;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px,
-     rgba(0, 0, 0, 0.1) 0px 16px 56px,
-      rgba(0, 0, 0, 0.1) 0px 24px 80px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .contactLeftSide{
-    width: 35rem;
+    width: 30%;
     height: 100%;
     background-image: url('../img/house_inturior_horizental_4.jpg');
     background-position: center;
@@ -504,26 +502,187 @@ html{
     opacity: .7;
 }
 .contactRightSide{
-    width: 65rem;
+    width: 70%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: space-around; */
-    background-color: #fff;
-    color: #000;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    background-color: #fff;
+    color: #000;
+
+}
+
+.contactRightSide div{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .contactHeader{
-    font-size: 4rem;
+    font-size: 6rem;
     font-family: "Baloo Da 2", serif;
-    margin: 2rem auto 1rem;
+    margin: 2rem auto 4rem;
     position: relative;
     top: 0rem;
 }
+.contactRightSide form{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    position: relative;
+    align-items: center;
+}
+.contactRightSide div.inputLayout{
+    width: 100%;
+    height: 8rem;
+    margin: 1rem 0  2rem 0;
+    padding: 1rem 0 1rem;
+}
 
-    
+.inputLayout .feild {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: .3rem dashed #000;
+    /* position:absolute; */
+    /* font-size: 2rem; */
+}
+
+.inputLayout textarea{
+    max-width: 100%;
+    max-height: 12rem;
+    min-width: 100%;
+    min-height: 12rem;
+}
+.inputLayout{
+    position: relative;
+}
+.inputLayout label{
+    text-align: left;
+    font-size: 3rem;
+    position: absolute;
+    left: 1rem;
+    /* bottom: 1rem; */
+    text-transform: uppercase;
+    font-family: 'Baloo Da 2';
+    pointer-events: none;
+    transition: all .3s;
+}
+
+.inputLabel {
+    bottom: 1rem;
+}
+.message{
+    top: 3rem;
+}
+.inputLayout .feild {
+    font-size: 2.5rem;
+}
+
+.feild:focus{
+    border-bottom-style: solid;
+}
+.feild:focus ~label{
+    font-size: 1.5rem;
+    transform: translateY(-4rem);
+}
+.submitElement{
+    position: relative;
+    /* bottom: 1rem; */
+    height: 5rem;
+    width: 70%;
+    margin-top: 4rem;
+    background-color: rgb(88, 88, 88);
+    color: aliceblue;
+    font-size: 2.5rem;
+    opacity: .8;
+    border:none;
+    text-align: center;
+    font-family: "Baloo Da 2";
+    cursor: pointer;
+    border-radius: .6rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+footer,
+.footerContainer {
+    background-color: #000;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    align-items: center;
+    color: #fff;
+}
+
+
+.copyRightDiv{
+    text-align: center;
+    margin: auto 20%;
+}
+.copyRightDiv h2 {
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    font-family: "Mulish";
+}
+
+.mediaDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: right;
+    margin: auto;
+}
+.mediaDiv span {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    margin-right: 4rem;
+    /* border-radius: 50%; */
+}
+
+.footerMediaIcon{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    font-size: 3rem;
+    color:aliceblue;
+    transition: all .3s;
+
+}
+.footerMediaIcon:hover{
+    color: #000;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transform: scale(1.5);
+
+}
+
+.fixedArrow{
+    position: fixed;
+    right: 3rem;
+    bottom: 2.5rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(2, 2, 2);
+    border-radius: 50%;
+}   
+
+.fixedArrow i {
+    font-size: 2rem;
+    color: #fff;
+}
 
 

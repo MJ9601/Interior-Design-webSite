@@ -19,13 +19,13 @@
 
 
 <!-- navbar -->
-   <div>
-        <a id="dropDownIcon" href="javascript:void(0)">&#9776;</a>
-   </div>             
+        <div>
+                <a id="dropDownIcon" href="javascript:void(0)">&#9776;</a>
+        </div>             
 
 
 <!-- header section -->
-        <header class="header">
+        <header class="header" id="header">
             <div class="img-wrapper">
                 <img src="static\img\home_family.jpg" alt="family home">
             </div>
@@ -186,29 +186,52 @@
             <div class="contactWrapper">
                 <div class="contactLeftSide"></div>
                 <div class="contactRightSide">
-                    <h1 class="contactHeader">Contact</h1>
-                    <form action="">
-                        <div class="inputLayout">
-                            <input type="text" class="feild"> 
-                            <label for="" class="inputLabel">Name</label>
-                        </div>
-                        <div class="inputLayout">
-                            <input type="email" class="feild"> 
-                            <label for="" class="inputLabel">Email</label>
-                        </div>
-                        <div class="inputLayout">
-                            <textarea name="" id="" cols="30" rows="10" class="feild"></textarea>
-                            <label for="" class="massage">Massage</label>
-                        </div>
-                        <input type="submit" class="submitElement" value="Submit">
+                    <div>
+                        <h1 class="contactHeader">Contact</h1>
+                        <form action="">
+                            <div class="inputLayout">
+                                <input type="text" class="feild"> 
+                                <label for="" class="inputLabel">Name</label>
+                            </div>
+                            <div class="inputLayout">
+                                <input type="email" class="feild"> 
+                                <label for="" class="inputLabel">Email</label>
+                            </div>
+                            <div class="inputLayout">
+                                <textarea name="" id="" cols="30" rows="10" class="feild"></textarea>
+                                <label for="" class="message">Massage</label>
+                                <input type="submit" class="submitElement" value="Submit">
+                            </div>
 
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
 
+<!-- footer -->
+        <footer>
+            <div class="footerContainer">
+                <div class="copyRightDiv">
+                    <h2>CopyRight &copy; 2021</h2>
+                </div>
+                <div class="mediaDiv">
+                    <span><a href="#"><i class="fab fa-instagram footerMediaIcon "></i></a></span>
+                    <span><a href="#"><i class="fab fa-twitter footerMediaIcon "></i></a></span>
+                    <span><a href="#"><i class="fab fa-youtube footerMediaIcon "></i></a></span>
+                    <span><a href="#"><i class="fab fa-facebook-f footerMediaIcon "></i></a></span>
+                </div>
+            </div>
+        </footer>
+
+        <div class="fixedArrow"><a href="#header">
+            <i class="fas fa-arrow-up"></i>
+        </a></div>
          
     </div>
+
+
+
     <script src="static/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="static/js/tilt.js"></script>

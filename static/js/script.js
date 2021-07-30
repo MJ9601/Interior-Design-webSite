@@ -2,6 +2,13 @@ document.querySelector('#dropDownIcon').addEventListener('click', dropDownMenuFu
 
 document.querySelector('#Xmark').addEventListener('click', hiddenSideBarFunc);
 
+window.onload = () => {
+    setTimeout(() => {
+        document.querySelector('body').classList.add('display');
+    }, 2000);
+}
+
+
 function dropDownMenuFunc() {
     document.querySelector('.container').className +=' sideBarShowed';
     console.log('Click');
@@ -20,3 +27,15 @@ function hiddenSideBarFunc() {
     console.log(document.querySelector('.container').className);
     
 }
+
+document.querySelector('#arrowBall').addEventListener('click', () => {
+    document.querySelector('html').style.scrollBehavior = 'smooth';
+    setTimeout(() => {
+        document.querySelector('html').style.scrollBehavior = 'unset';
+        
+    }, 1200);
+})
+
+// document.querySelector('html').addEventListener('scroll', () => {
+//     document.querySelector('html').style.scrollBehavior = 'unset';
+// })
